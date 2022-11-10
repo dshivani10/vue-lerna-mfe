@@ -12,8 +12,9 @@ export default {
 
 <style scoped>
 .application-mfe{
-  background-color: #a4c0c4;
+  background-color: #f5f5dc;
   height: 100px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

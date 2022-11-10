@@ -1,6 +1,6 @@
 {
   "name": "vue-lerna-mfe",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "main": "./build/build-lib.umd.cjs",
   "module": "./build/build-lib.js",
   "files": [
@@ -12,7 +12,7 @@
       "import": "./build/build-lib.js",
       "require": "./build/build-lib.umd.cjs"
     },
-    "./dist/style.css": "./build/style.css"
+    "./build/style.css": "./build/style.css"
   },
   "devDependencies": {
     "lerna": "^3.22.1"
