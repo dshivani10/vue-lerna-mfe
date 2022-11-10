@@ -1,0 +1,26 @@
+{
+  "name": "vue-lerna-mfe",
+  "version": "0.0.2",
+  "main": "./build/build-lib.umd.cjs",
+  "module": "./build/build-lib.js",
+  "files": [
+    "build",
+    "packages/*/dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./build/build-lib.js",
+      "require": "./build/build-lib.umd.cjs"
+    },
+    "./dist/style.css": "./build/style.css"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "scripts": {
+    "boot": "lerna clean -y && lerna bootstrap && lerna run test",
+    "start": "lerna run start",
+    "test": "lerna run test",
+    "build": "lerna run build"
+  }
+}
